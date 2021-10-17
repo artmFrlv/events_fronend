@@ -18,6 +18,7 @@ const Modal: FC<ModalProps> = ({setActive, children, width}) => {
                             src={'/cross.svg'}
                             width={20}
                             height={20}
+                            alt={'Закрыть'}
                         />
                     </div>
                 </div>

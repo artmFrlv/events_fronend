@@ -43,7 +43,7 @@ const ChangeEvent: FC<ChangeEventProps> = ({eventId, setChangeEvent}) => {
         return () => {
             dispatch(clearUsers());
         }
-    }, []);
+    }, [dispatch, membersId, organizersId]);
 
     const usersInfo = useTypedSelector(state => state.events.users);
 

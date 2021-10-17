@@ -1,11 +1,10 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useState} from 'react';
 import styles from './Calendar.module.css';
 import moment, {Moment} from 'moment';
 import generateCalendarList from '@utils/generateCalendarList';
 import CalendarWeekRow from '@components/CalendarWeekRow';
 import MonthSwitcher from '@components/MonthSwitcher';
 import {useTypedSelector} from '@hooks/useTypedSelector';
-import Button from '@UIkit/Button';
 
 const Calendar: FC = () => {
     const totalDays = 42;

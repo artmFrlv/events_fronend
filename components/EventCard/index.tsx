@@ -1,5 +1,4 @@
 import React, {FC, useRef, useState} from 'react';
-import {EventsList} from '@models/IEvent';
 import styles from './EventCard.module.css';
 import {useTypedSelector} from '@hooks/useTypedSelector';
 import {useOutsideClick} from '@hooks/useOutsideClick';

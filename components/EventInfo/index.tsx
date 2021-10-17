@@ -1,4 +1,4 @@
-import React, {FC, useEffect, useState} from 'react';
+import React, {FC, useEffect} from 'react';
 import moment from 'moment';
 import {selectEventById} from '@store/events/eventsSlice';
 import styles from './EventInfo.module.css';
@@ -36,7 +36,7 @@ const EventInfo: FC<EventInfoProps> = ({id, setChosenEvents, setChangeEvent}) =>
         return () => {
             dispatch(clearUsers());
         }
-    }, []);
+    }, [dispatch, creatorId, membersId, organizersId]);
 
     const usersInfo = useTypedSelector(state => state.events.users);
 

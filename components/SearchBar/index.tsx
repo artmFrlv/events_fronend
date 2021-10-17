@@ -2,7 +2,6 @@ import React, {FC, useRef, useState} from 'react';
 import styles from './SearchBar.module.css';
 import Input from '@UIkit/Input';
 import {useOutsideClick} from '@hooks/useOutsideClick';
-import {useAppDispatch} from '@hooks/useAppDispatch';
 import {FoundUsers} from '@store/events/eventsSlice';
 import classNames from 'classnames';
 import Image from 'next/image';
@@ -73,6 +72,7 @@ const SearchBar: FC<SearchBarProps> = ({title, addUser, chosenUsers, isOrganizer
                                     src={'/cross.svg'}
                                     width={10}
                                     height={10}
+                                    alt={'Удалить пользователя'}
                                 />
                             </div>
                         </div>

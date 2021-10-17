@@ -20,5 +20,5 @@ export function useOutsideClick({ref, callback, needCallback}: UseOutsideClickPr
             };
         }
         document.removeEventListener('mousedown', handleClickOutside);
-    }, [ref, needCallback]);
+    }, [ref, needCallback, callback]);
 }

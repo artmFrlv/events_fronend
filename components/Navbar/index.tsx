@@ -29,6 +29,7 @@ const Navbar = () => {
                             height={30}
                             width={30}
                             src={'/logout.svg'}
+                            alt={'Выйти из аккаунта'}
                         />
                     </div>
                 }

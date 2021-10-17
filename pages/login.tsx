@@ -10,7 +10,7 @@ import {useDispatch} from 'react-redux';
 const Login = () => {
     const router = useRouter();
     const dispatch = useDispatch();
-    const {isPageInitialized, isAuth} = useTypedSelector(state => state.auth);
+    const {isPageInitialized} = useTypedSelector(state => state.auth);
 
     useEffect(() => {
         if (!isPageInitialized) {
@@ -20,7 +20,7 @@ const Login = () => {
                 router.push('/');
             }).catch(() => {dispatch(setIsPageInitialized())});
         }
-    }, []);
+    }, [dispatch, isPageInitialized, router]);
 
     if (!isPageInitialized) {
         return (

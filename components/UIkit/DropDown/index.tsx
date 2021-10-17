@@ -30,6 +30,7 @@ const DropDown: FC<DropDownProps> = ({value, setValue, valueList}) => {
                         src={'/arrowDown.svg'}
                         width={16}
                         height={16}
+                        alt={'Открыть меню для выбора другого значения'}
                     />
                 </div>
             </div>

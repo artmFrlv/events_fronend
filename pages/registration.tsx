@@ -8,7 +8,7 @@ import {setAuth, setIsPageInitialized} from '@store/auth/authSlice';
 import {useDispatch} from 'react-redux';
 
 const Registration = () => {
-    const {isAuth, isPageInitialized} = useTypedSelector(state => state.auth);
+    const {isPageInitialized} = useTypedSelector(state => state.auth);
     const router = useRouter();
     const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ const Registration = () => {
                 router.push('/');
             }).catch(() => {dispatch(setIsPageInitialized())});
         }
-    }, []);
+    }, [dispatch, isPageInitialized, router]);
 
     if (!isPageInitialized) {
         return (

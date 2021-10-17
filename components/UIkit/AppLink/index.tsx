@@ -11,7 +11,7 @@ interface AppLink {
 const AppLink: FC<AppLink> = ({children, href, size}) => {
     const className = [styles.title, styles[size]];
     return (
-        <Link href={href}>
+        <Link href={href} passHref>
             <div className={className.join(' ')}>
                 {children}
             </div>

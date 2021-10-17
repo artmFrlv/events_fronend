@@ -1,5 +1,5 @@
-import React, {FC, useEffect} from 'react';
-import moment, {Moment} from 'moment';
+import React, {FC} from 'react';
+import {Moment} from 'moment';
 import styles from './MonthSwitcher.module.css';
 import Image from 'next/image';
 
@@ -16,6 +16,7 @@ const MonthSwitcher: FC<MonthSwitchProps> = ({startDate, setStartDay}) => {
                     src={'/leftArrow.svg'}
                     width={15}
                     height={15}
+                    alt={'Предыдущий месяц'}
                 />
             </div>
             <h1 className={styles.title}>{startDate.format('MMMM')}</h1>
@@ -24,6 +25,7 @@ const MonthSwitcher: FC<MonthSwitchProps> = ({startDate, setStartDay}) => {
                     src={'/rightArrow.svg'}
                     width={15}
                     height={15}
+                    alt={'Следующий месяц'}
                 />
             </div>
         </div>

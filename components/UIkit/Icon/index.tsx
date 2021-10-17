@@ -12,9 +12,9 @@ interface LogoProps {
 
 const Icon: FC<LogoProps> = ({href, ...imageProps}) => {
     return (
-        <Link href={href}>
+        <Link href={href} passHref>
             <div>
-                <Image {...imageProps} />
+                <Image {...imageProps} alt={'Картинка'}/>
             </div>
         </Link>
     );

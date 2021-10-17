@@ -16,7 +16,7 @@ const Events = () => {
 
     useEffect(() => {
         dispatch(fetchGetAllEvents(id))
-    }, [isAuth]);
+    }, [dispatch, isAuth, id]);
 
     return (
         <div className={styles.eventsWrapper}>

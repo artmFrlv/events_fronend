@@ -1,4 +1,4 @@
-import React, {FC, useMemo, useState} from 'react';
+import React, {FC, useMemo} from 'react';
 import DropDown from '@UIkit/DropDown';
 import styles from './DatePicker.module.css';
 import {Moment} from 'moment';
@@ -11,9 +11,9 @@ interface DatePickerProps {
 }
 
 const DatePicker: FC<DatePickerProps> = ({title, date, setDate}) => {
-    const yearList = useMemo(() => generateList(date.year() - 100, date.year()).reverse(), [date.year()]);
+    const yearList = useMemo(() => generateList(date.year() - 100, date.year()).reverse(), [date]);
     const monthList = generateList(1, 12);
-    const dayList = useMemo(() => generateList(1, date.daysInMonth()), [date.daysInMonth()]);
+    const dayList = useMemo(() => generateList(1, date.daysInMonth()), [date]);
     return (
         <div>
             <div className={styles.title}>

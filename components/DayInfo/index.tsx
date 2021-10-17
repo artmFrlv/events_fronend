@@ -16,7 +16,7 @@ interface DayInfoProps {
 const DayInfo: FC<DayInfoProps> = ({events, isCurrentDay, setChangeEvent}) => {
     const [chosenEvents, setChosenEvents] = useState<number[]>([]);
 
-    const dateNow = new Date;
+    const dateNow = useMemo(() => new Date, []);
     const minutesNow = useMemo(() => getMinutes(dateNow), [dateNow]);
 
     const eventsTimeLapse = useMemo(() => convertEvents(events), [events]);
@@ -43,7 +43,7 @@ const DayInfo: FC<DayInfoProps> = ({events, isCurrentDay, setChangeEvent}) => {
                         <div className={styles.choseEvent}>
                             {
                                 chosenEvents.map((id) =>
-                                    <EventCard eventId={id} needShowInfo={false} showInfo={handlerClickOnTitleEvent}/>
+                                    <EventCard key={`eventCard__${id}`} eventId={id} needShowInfo={false} showInfo={handlerClickOnTitleEvent}/>
                                 )
                             }
                         </div>
