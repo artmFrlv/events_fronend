@@ -1,0 +1,14 @@
+.timeLapseWrapper {
+    width: 720px;
+    height: 80px;
+    position: relative;
+    border: 1px solid #dddfe2;
+}
+
+.timeNow {
+    position: absolute;
+    top: -5px;
+    height: 90px;
+    width: 2px;
+    background-color: black;
+}

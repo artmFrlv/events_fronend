@@ -1,0 +1,10 @@
+.datePicker {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+}
+
+.title {
+    margin: 10px;
+}

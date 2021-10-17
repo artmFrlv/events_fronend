@@ -1,0 +1,14 @@
+.eventItem {
+    position: absolute;
+    height: 100%;
+    background-color: rgba(212,225,87,0.4);
+    cursor: pointer;
+}
+
+.organizer {
+    background-color: rgba(255,202,40,0.4);
+}
+
+.creator {
+    background-color: rgba(255,112,67,0.4);
+}

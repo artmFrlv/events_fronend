@@ -1,0 +1,41 @@
+.eventInfoCardWrapper {
+    position: absolute;
+    background-color: #d4e157;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.organizer {
+    background-color: #ffca28;
+}
+
+.creator {
+    background-color: #ff7043;
+}
+
+.eventInfoCardWrapper::before {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #d4e157;
+    top: -20px;
+    left: 20px;
+}
+
+.organizer::before {
+    border-bottom: 10px solid #ffca28;
+}
+
+.creator::before {
+    border-bottom: 10px solid #ff7043;
+}
+
+.title {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.description {
+    margin-bottom: 10px;
+}

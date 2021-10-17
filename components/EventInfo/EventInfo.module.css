@@ -1,0 +1,58 @@
+.eventInfoWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+
+.title {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.usersContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+
+.margin {
+    margin: 5px 0;
+}
+
+.member {
+    background-color: #d4e157;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    width: min-content;
+    margin-left: 5px;
+}
+
+.organizer {
+    background-color: #ffca28;
+    margin-bottom: 2px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    width: min-content;
+    margin-left: 5px;
+}
+
+.creator {
+    background-color: #ff7043;
+    margin-bottom: 2px;
+    padding: 2px 6px;
+    border-radius: 8px;
+    width: min-content;
+    margin-left: 5px;
+}
+
+.buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: 0;
+}

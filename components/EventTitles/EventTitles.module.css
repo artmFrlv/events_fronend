@@ -1,0 +1,15 @@
+.eventTitlesWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    background-color: green;
+    margin-bottom: 2px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.title:last-child {
+    margin-bottom: 0;
+}

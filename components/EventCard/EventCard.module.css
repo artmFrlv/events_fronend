@@ -1,0 +1,26 @@
+.eventCard {
+    background-color: #d4e157;
+    margin-bottom: 2px;
+    padding: 2px 6px;
+    border-radius: 8px;
+}
+
+.organizer {
+    background-color: #ffca28;
+}
+
+.creator {
+    background-color: #ff7043;
+}
+
+.blackout {
+    filter: grayscale(50%);
+}
+
+.title {
+    cursor: pointer;
+}
+
+.eventCard:last-child {
+    margin-bottom: 0;
+}

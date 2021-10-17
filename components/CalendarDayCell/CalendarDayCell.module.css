@@ -1,0 +1,35 @@
+.dayWrapper {
+    height: 100px;
+    width: 150px;
+    background-color: #c7c7c7;
+    border-radius: 8px;
+    margin: 2px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dayNumber {
+    text-align: end;
+    cursor: pointer;
+}
+
+.eventTitles {
+    margin-top: 5px;
+    overflow-x: hidden;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.eventTitles::-webkit-scrollbar {
+    width: 0;
+}
+
+.currentDay {
+    border: 3px solid #c7c7c7;
+}
+
+.selectedMonth {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px rgba(0,0,0,0.5);
+}

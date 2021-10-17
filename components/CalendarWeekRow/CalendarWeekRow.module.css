@@ -1,0 +1,4 @@
+.weekWrapper {
+    display: flex;
+    flex-direction: row;
+}
