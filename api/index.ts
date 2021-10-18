@@ -1,7 +1,7 @@
 import axios from 'axios';
 import Cookies from 'js-cookie';
 
-export const API_URL = 'http://84.38.183.53:5000/api';
+export const API_URL = 'https://create-events.ru:5000/api';
 
 const $api = axios.create({
     withCredentials: true,
