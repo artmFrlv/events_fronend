@@ -11,6 +11,7 @@ import DatePicker from '@components/DatePicker';
 
 import styles from './RegistrationForm.module.css';
 import validateEmail from '@utils/validateEmail';
+import {useRouter} from 'next/router';
 
 const RegistrationForm = () => {
     const [email, setEmail] = useState<string>('');
@@ -20,6 +21,7 @@ const RegistrationForm = () => {
     const [password, setPassword] = useState<string>('');
     const [birthday, setBirthday] = useState<Moment>(moment());
     const [errors, setErrors] = useState<string[]>([]);
+    const router = useRouter();
 
     const dispatch = useAppDispatch();
 
@@ -45,7 +47,7 @@ const RegistrationForm = () => {
                 secondName,
                 email,
                 birthday: birthday.toDate()
-            }));
+            })).unwrap().then(() => router.push('/'));
         }
     };
 
